@@ -1,92 +1,21 @@
 
-# git 명령어
+# 1. git 명령어
 
+## 1-1 설정과 초기화
 
-## 전역 설정 정보 조회
-
+- 전역 사용자명/이메일 구성하기
 ```
- git config - -global - -list
-```
-
-
-
-
-## 전역 설정 정보 삭제시키기
-
-```
-1. git config --global --unset-all user.email
-
-
-2. git config --global --unset-all user.name
+git config - -global user.name “이름”
+git config - -global user.email “주소”
 ```
 
+- 저장소별 사용자명/이메일 구성하기 (해당 저장소 디렉터리로 이동후)
 
 
-## 새로운 저장소 초기화하기
+git config user.name “Your name”
+git config user.email “Your email address”
 
-```
- git init
-```
-
-
-
-## 저장소 복제하기
-
-```
- git clone <저장소 url>
-```
-
-
-
-## 새로운 원격 저장소 추가하기
-
-```
- git remote add <원격 저장소> <저장소 url>
-```
-
-
-
-## 새로운 파일 git에 등록시키기(staging)
-
-```
- git add <파일>
-```
-
-
-
-## 현재까지 작업한 내용 저장하기
-
-```
- git commit -m “<메시지>”
-```
-
-
-
-## 원격 저장소에서 합치지 않고 지역 브랜치로 변경 사항 가져오기
-
-```
- git fetch <원격 저장소>
-```
-
-
-
-## 원격 저장소에서 변경 사항을 가져와 현재 브랜치에 합치기
-
-```
- git pull <원격 저장소>
-```
-
-
-
-## 새로운 로컬 브랜치를 원격 저장소에 푸싱하기
-
-```
- git push <원격 저장소> <지역 브랜치>
-```
-
-
-
-# markdown 문법
+# 2. markdown 문법
 
 
 ## 제목(Headers)
@@ -110,6 +39,22 @@
 >> ##### 다섯 번째 수준 제목 (H5)
 >> ###### 여섯 번째 수준 제목 (H6)
 
+
+## 줄바꿈
+- 줄을 바꿀 때는 엔터를 두번, 1줄 띄어준다.
+
+>입력
+```
+줄을 바꾼다.
+
+줄을 바꾼다.
+```
+
+>출력
+
+>>줄을 바꾼다.
+
+>>줄을 바꾼다.
 
 ## 인용(Blockquotes)
  - 인용된 글을 표시한다. 한줄에 써도 되고 줄마다 인용해도 된다. ` > `를 사용한다.
